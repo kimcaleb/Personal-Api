@@ -18,6 +18,8 @@ const
     app.use(logger("dev")); 
 
 // 5. Establish Routes using Routers
+    const profileRouter = require("./routers/profileRouter");
+    app.use("/api/profile", profileRouter);
 
 
 // 6. Listen on Port (Basically deploy server to localhost)
