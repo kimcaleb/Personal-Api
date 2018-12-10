@@ -21,7 +21,8 @@ module.exports = {
     },
 
     update: (req,res) => {
-        Project.findByIdAndUpdate(req.params.id,{new:true},(err,project) =>{
+        let { body, params} = req;
+        Project.findByIdAndUpdate(params.id,body,{new:true},(err,project) =>{
             if (err) res.json({success:false,err});
             res.json({success:true,project});
         })
