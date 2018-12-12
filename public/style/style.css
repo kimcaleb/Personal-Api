@@ -1,0 +1,31 @@
+body {
+    text-align:center;
+    margin:0;
+
+}
+
+#infobox{
+    background:darkgray;
+    height: 40%;
+    
+    
+}
+.divproject {
+    border: 1px solid lightgray;
+    
+    
+}
+button {
+    margin:10px 5px;
+}
+span {
+    font-weight: bold;
+}
+
+.formdiv {
+    display:grid;
+    grid-gap: 1px;
+}
+input, textarea {
+    border: 1px solid black;
+}

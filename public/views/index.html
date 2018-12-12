@@ -5,11 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../style/style.css">
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Personal Dashboard</title>
 </head>
 <body>
+    <nav>
+        <h1>Caleb's Project Dashboard</h1>
+    </nav>
+    <main>
+        <h2>List of Projects</h2>
+        <div class ="divproject">
+            <button class="select" id="select1">Select</button> <button class="delete" id="delete1">Delete</button> <span>My Web Portfolio</span>
+        </div>
+    </main>
+    <article id="infobox">
 
+    </article>
+    <h2>Create New Project Profile</h2>
+    <article id="createnew">
+        <form action="">
+            <div class="formdiv">
+                <input type="text" placeholder="Name of Project" class="createfield" id="name">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Description of Project" class="createfield"></textarea>
+                <input type="text" placeholder="Github Repo Url" class="createfield">
+                <input type="text" placeholder="Deployed Url" class="createfield">
+                <input type="text" placeholder="Screenshot URL" class="createfield">
+                <input type="submit" name="" id="createsubmit">
+            </div>
+        </form>
+    </article>
     <script src="../js/main.js"></script>
     <script src=""></script>
+
 </body>
 </html>
